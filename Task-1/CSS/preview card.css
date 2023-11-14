@@ -1,0 +1,149 @@
+
+:root {
+    --body-C: #0D1A2D;
+    --card-C: #15273F;
+    --activ-: #04FDF9;
+    --border-RAD: .5em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-C);
+    font-family: 'Nunito', sans-serif;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10em ;
+}
+
+.card {
+    background-color: var(--card-C);
+    height: 490px;
+    width: 270px;
+    border-radius: var(--border-RAD);
+    padding: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.651);
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.pic {
+    padding: .5em;
+    position: relative;
+    transition: 2s;
+}
+
+.pic:hover .overlay{
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    width: 234px;
+    height: 234px;
+    background-color: #008f9da3;
+    border-radius: var(--border-RAD);
+}
+
+.overlay img {
+    scale: .2;
+}
+
+.pic img {
+    width: 100%;
+    border-radius: var(--border-RAD);
+}
+
+.p-1 {
+    margin: 10px 10px .5em 10px;
+}
+
+.p-1 a {
+    text-decoration: none;
+    color: #F5FCFF;
+    font-size: .6em;
+    transition: .2s;
+}
+
+.p-1 a:hover {
+    color: var(--activ-);
+}
+
+.p-1 p {
+    color: #7E92B3;
+    margin-top: 10px;
+    letter-spacing: 0.3px;
+}
+
+.exp {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+}
+
+.no-clock img {
+    transform: translateX(-15px) translateY(25px);
+}
+
+.no-clock p {
+    color: #04FDF9;
+    font-weight: 800;
+}
+.clock img {
+    transform: translateX(-17px) translateY(25px);
+}
+
+.clock p {
+    color: #93AFD7;
+}
+
+hr {
+    border: 1px solid #93afd738;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+}
+
+.logo img {
+    scale: 17%;
+    transform: translate(-20em, -19em);
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.attribution {
+    transform: translate(0px, 10px);
+}
+
+.attribution p {
+    font-size: 0.9rem;
+    transform: translate(43px, -18px);
+    color: #7E92B3;
+}
+
+.attribution p a {
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+}
+
+.attribution p a:hover {
+    color: var(--activ-);
+}
